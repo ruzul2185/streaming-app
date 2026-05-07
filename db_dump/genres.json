@@ -1,0 +1,63 @@
+[{
+  "_id": {
+    "$oid": "69fc738aacc650f57773dcf7"
+  },
+  "genre_id": 1,
+  "genre_name": "Comedy"
+},
+{
+  "_id": {
+    "$oid": "69fc738aacc650f57773dcf8"
+  },
+  "genre_id": 2,
+  "genre_name": "Drama"
+},
+{
+  "_id": {
+    "$oid": "69fc738aacc650f57773dcf9"
+  },
+  "genre_id": 3,
+  "genre_name": "Western"
+},
+{
+  "_id": {
+    "$oid": "69fc738aacc650f57773dcfa"
+  },
+  "genre_id": 4,
+  "genre_name": "Fantasy"
+},
+{
+  "_id": {
+    "$oid": "69fc738aacc650f57773dcfb"
+  },
+  "genre_id": 5,
+  "genre_name": "Thriller"
+},
+{
+  "_id": {
+    "$oid": "69fc738aacc650f57773dcfc"
+  },
+  "genre_id": 6,
+  "genre_name": "Sci-Fi"
+},
+{
+  "_id": {
+    "$oid": "69fc738aacc650f57773dcfd"
+  },
+  "genre_id": 7,
+  "genre_name": "Action"
+},
+{
+  "_id": {
+    "$oid": "69fc738aacc650f57773dcfe"
+  },
+  "genre_id": 8,
+  "genre_name": "Mystery"
+},
+{
+  "_id": {
+    "$oid": "69fc738aacc650f57773dcff"
+  },
+  "genre_id": 9,
+  "genre_name": "Crime"
+}]

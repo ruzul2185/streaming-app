@@ -1,0 +1,42 @@
+[{
+  "_id": {
+    "$oid": "69fc737aacc650f57773dcf0"
+  },
+  "ranking_value": 999,
+  "ranking_name": "Not_Ranked"
+},
+{
+  "_id": {
+    "$oid": "69fc737aacc650f57773dcf1"
+  },
+  "ranking_value": 1,
+  "ranking_name": "Excellent"
+},
+{
+  "_id": {
+    "$oid": "69fc737aacc650f57773dcf2"
+  },
+  "ranking_value": 2,
+  "ranking_name": "Good"
+},
+{
+  "_id": {
+    "$oid": "69fc737aacc650f57773dcf3"
+  },
+  "ranking_value": 3,
+  "ranking_name": "Okay"
+},
+{
+  "_id": {
+    "$oid": "69fc737aacc650f57773dcf4"
+  },
+  "ranking_value": 4,
+  "ranking_name": "Bad"
+},
+{
+  "_id": {
+    "$oid": "69fc737aacc650f57773dcf5"
+  },
+  "ranking_value": 5,
+  "ranking_name": "Terrible"
+}]

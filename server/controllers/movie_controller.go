@@ -25,13 +25,39 @@ func GetMovies() gin.HandlerFunc {
 
 		if err != nil {
 			c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to fetch movies."})
+			return
 		}
 		defer cursor.Close(ctx)
 
 		if err = cursor.All(ctx, &movies); err != nil {
 			c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to decode movies."})
+			return
 		}
 
 		c.JSON(http.StatusOK, movies)
+	}
+}
+
+func GetMovie() gin.HandlerFunc {
+	return func(c *gin.Context) {
+		ctx, cancel := context.WithTimeout(context.Background(), 100*time.Second)
+		defer cancel()
+
+		movieID := c.Param("imdb_id")
+
+		if movieID == "" {
+			c.JSON(http.StatusBadRequest, gin.H{"error": "Movie ID is required"})
+		}
+
+		var movie models.Movie
+
+		err := movieCollection.FindOne(ctx, bson.M{"imdb_id": movieID}).Decode(&movie)
+
+		if err != nil {
+			c.JSON(http.StatusNotFound, gin.H{"error": "Movie not found"})
+			return
+		}
+
+		c.JSON(http.StatusOK, movie)
 	}
 }

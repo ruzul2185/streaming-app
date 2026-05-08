@@ -92,4 +92,37 @@
       "genre_name": "Sci-Fi"
     }
   ]
+},
+{
+  "_id": {
+    "$oid": "69fe3b31103fe023f5a7b88e"
+  },
+  "user_id": "69fe3b31103fe023f5a7b88d",
+  "first_name": "Craig",
+  "last_name": "Denton",
+  "email": "craigdenton@hotmail.com",
+  "password": "$2a$10$InqXriIWP6svkbrqm2oOY.Zl7Nhyejz7vN2dukFMLH6oNNTX1Cf7a",
+  "role": "USER",
+  "created_at": {
+    "$date": "2026-05-08T19:36:17.684Z"
+  },
+  "updated_at": {
+    "$date": "2026-05-08T20:58:33.000Z"
+  },
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6ImNyYWlnZGVudG9uQGhvdG1haWwuY29tIiwiRmlyc3ROYW1lIjoiQ3JhaWciLCJMYXN0TmFtZSI6IkRlbnRvbiIsIlJvbGUiOiJVU0VSIiwiVXNlcklkIjoiNjlmZTNiMzExMDNmZTAyM2Y1YTdiODhkIiwiaXNzIjoiU3RyZWFtaW5nQXBwIiwiZXhwIjoxNzc4MzYwMzEzLCJpYXQiOjE3NzgyNzM5MTN9.0u_YLzrH3GJgaJg_41aoxWLFdhWf83tqiUSDt5EwjvA",
+  "refresh_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6ImNyYWlnZGVudG9uQGhvdG1haWwuY29tIiwiRmlyc3ROYW1lIjoiQ3JhaWciLCJMYXN0TmFtZSI6IkRlbnRvbiIsIlJvbGUiOiJVU0VSIiwiVXNlcklkIjoiNjlmZTNiMzExMDNmZTAyM2Y1YTdiODhkIiwiaXNzIjoiU3RyZWFtaW5nQXBwIiwiZXhwIjoxNzc4ODc4NzEzLCJpYXQiOjE3NzgyNzM5MTN9.OLQ_-d9LvbwlOhLDccA_TtQYdjxHYXfYDoUAnu23RXY",
+  "favourite_genres": [
+    {
+      "genre_id": 1,
+      "genre_name": "Comedy"
+    },
+    {
+      "genre_id": 5,
+      "genre_name": "Thriller"
+    },
+    {
+      "genre_id": 6,
+      "genre_name": "Sci-Fi"
+    }
+  ]
 }]

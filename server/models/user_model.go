@@ -18,5 +18,22 @@ type User struct {
 	UpdatedAt       time.Time     `bson:"updated_at" json:"updated_at"`
 	Token           string        `bson:"token" json:"token"`
 	RefreshToken    string        `bson:"refresh_token" json:"refresh_token"`
-	FavouriteGenres []Genre       `bson:"favourite_genre" json:"favourite_genre" validate:"required,dive"`
+	FavouriteGenres []Genre       `bson:"favourite_genres" json:"favourite_genres" validate:"required,dive"`
+}
+
+type UserLogin struct {
+	Email    string `json:"email" validate:"required,email"`
+	Password string `json:"password" validate:"required,min=6"`
+}
+
+// DTO - Data Transfer Object - Design pattern used to transfer data between frontend and backend or different services with not business logic
+type UserResponse struct {
+	UserId          string  `json:"user_id"`
+	FirstName       string  `json:"first_name"`
+	LastName        string  `json:"last_name"`
+	Email           string  `json:"email"`
+	Role            string  `json:"role"`
+	Token           string  `json:"token"`
+	RefreshToken    string  `json:"refresh_token"`
+	FavouriteGenres []Genre `json:"favourite_genres"`
 }

@@ -95,3 +95,9 @@ func AddMovie() gin.HandlerFunc {
 		c.JSON(http.StatusCreated, result)
 	}
 }
+
+func AdminReviewUpdate() gin.HandlerFunc {
+	return func(c *gin.Context) {
+		// 6:11:46
+	}
+}

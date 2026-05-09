@@ -4,7 +4,7 @@ import (
 	"fmt"
 
 	"github.com/gin-gonic/gin"
-	controller "github.com/ruzul2185/streaming-app/server/controllers"
+	"github.com/ruzul2185/streaming-app/server/routes"
 )
 
 func main() {
@@ -15,11 +15,8 @@ func main() {
 		ctx.String(200, "Hello, Streaming App!")
 	})
 
-	router.GET("/movies", controller.GetMovies())
-	router.GET("/movie/:imdb_id", controller.GetMovie())
-	router.POST("/addmovie", controller.AddMovie())
-	router.POST("/register", controller.RegisterUser())
-	router.POST("/login", controller.LoginUser())
+	routes.SetupUnProtedtedRoutes(router)
+	routes.SetupProtedtedRoutes(router)
 
 	if err := router.Run(":8080"); err != nil {
 		fmt.Println("Failed to start server", err)
